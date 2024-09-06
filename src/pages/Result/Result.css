@@ -1,0 +1,69 @@
+.result
+{
+    /* background: linear-gradient(to right, #2A1455, #4626B3, #542BDE); */
+    background: url(https://img.freepik.com/free-vector/abstract-banner-with-low-poly-connections-design_1048-13077.jpg?t=st=1725203354~exp=1725206954~hmac=218fbb43b293806418ded302d5d1887cdc2a256df3af0baf68ea90676bbe453c&w=1800);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.title
+{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    padding: 0px;
+    margin: 0;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two columns to accommodate four boxes in total */
+    gap: 20px; /* Space between the boxes */
+    padding: 40px;
+    justify-items: center; /* Center the boxes within their grid cells */
+}
+
+.content-box {
+    width: 800px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.content-header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.content-header .icon {
+    width: 24px;
+    height: 24px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.scrollable-box {
+    height: 150px;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}

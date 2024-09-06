@@ -1,0 +1,243 @@
+
+
+.banner
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 250px;
+}
+/* .img
+{
+    position: absolute;
+    background: none;
+} */
+
+.main
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main h1
+{
+    color: #fff;
+    font-weight: 500;
+    font-size: 65px;
+}
+
+.main p
+{
+    color: #A6A5AD;
+    font-weight: 100;
+    font-size: 20px;
+    width: 630px;
+    text-align:center;
+    margin-top: 20px;
+}
+
+.buttons
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.buttons a 
+{
+  text-decoration: none;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.button1 {
+    font-family: inherit;
+    font-size: 20px;
+    background: #2C1559;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .button1 a
+  {
+    text-decoration: none;
+    background: transparent ;
+    color: inherit;
+   
+  }
+  
+  .button1 span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button1 svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button1:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .button1:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .button1:hover span {
+    transform: translateX(5em);
+  }
+  
+  .button1:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+
+
+.button2 {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 20px;
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: #2C1559;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+  
+  .button2 a
+  {
+    text-decoration: none;
+    background: transparent ;
+    color: inherit;
+   
+  }
+  .button2 span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  
+  .button2 span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+    
+  }
+  
+  .button2:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #2C1559;
+    
+  }
+  
+  .button2:hover {
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+  
+  .button2:active span::before {
+    background: #6e6e6e;
+    border-radius: 5px;
+  }
+
+
+  @media (max-width:750px){
+
+    .main
+    {
+      padding: 0px;
+    }
+    .main h1
+    {
+      font-size: 28px;
+      max-width: 500px;
+      margin-top: 20px;
+      margin-left: 25px;
+  
+    }
+
+    .main p
+    {
+      font-size: 13px;
+    width: 310px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    }
+    
+    .banner
+    {
+      left: 10px;
+
+    }
+
+    .buttons
+    {
+      margin-left:30px;
+      margin-top: 20px;
+    }
+
+    .button1
+    {
+      width: 155px;
+      height: 50px;
+      font-size: 15px;
+    }
+
+    .button2
+    {
+      width: 170px;
+      height: 50px;
+      font-size: 15px;
+    }
+    
+  }

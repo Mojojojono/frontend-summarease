@@ -1,0 +1,197 @@
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: url(../../assets/bg_image.png);
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+
+}
+
+.navbar .active
+{
+    padding-bottom:2px;
+    border-bottom: 2px solid #fff;
+    transition: 0.4s;
+
+    
+}
+.nav-mid
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    color: #49557e;
+    gap: 40px;
+    margin-right: 80px;
+    text-decoration: none;
+    border: 1px solid rgba(154, 149, 245, 0.3); /* Slightly opaque border */
+    border-radius: 50px; /* Rounded corners */
+    
+    padding: 10px 80px; /* Inner padding */
+    padding-bottom: 13px;
+    color: #fff; /* Text color */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect to give a glass-like appearance */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow for depth */
+   
+
+    
+    
+}
+
+.nav-mid li
+{
+  background: none;
+}
+
+
+.nav-mid li a
+{
+    text-decoration: none;
+    background: transparent ;
+    color: #fff;
+    
+    
+}
+
+
+.logo{
+    width: 250px;
+    height: 300px;
+    
+
+}
+
+
+ 
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color:#592EE0;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 125px;
+  }
+  
+  .icon {
+    
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+    background: inherit;
+    border-radius: 100%;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+
+  .nav-right
+  {
+    background: transparent;
+    margin-bottom: 5px;
+  }
+
+  .user
+  {
+    width: 40px;
+    background: none;
+    margin-right: 25px;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+
+  @media (max-width:750px){
+
+    .navbar
+    {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+
+    .nav-mid{
+      display: none;
+    }
+
+    .logo
+    {
+      margin-top: 10px;
+      width: 150px;
+      height: 200px;
+    }
+
+    .button
+    {
+      width: 80px;
+      height: 40px;
+    }
+
+    .icon
+    {
+      display: none;
+    }
+    
+    
+  }
